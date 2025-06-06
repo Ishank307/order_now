@@ -1,6 +1,7 @@
 import 'package:fluid_bottom_nav_bar/fluid_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:order_now/views/pages/cart.dart';
+import 'package:order_now/views/pages/favourite.dart';
 import 'package:order_now/views/pages/food_menu_page.dart';
 import 'package:order_now/views/pages/food_page.dart';
 import 'package:order_now/views/pages/setup.dart';
@@ -16,7 +17,7 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
   int _selectedIndex = 0;
 
-  final List<Widget> pages = [FoodMenuPage(), Setup(), User(), Cart()];
+  final List<Widget> pages = [FoodMenuPage(), Setup(), FavoritesPage(), Cart()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(

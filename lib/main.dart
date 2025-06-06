@@ -3,6 +3,7 @@ import 'package:order_now/majestic/ui/auth_page/auth_page.dart';
 import 'package:order_now/majestic/ui/auth_page/otp_page.dart';
 import 'package:order_now/views/components/bottom_nav_bar.dart';
 import 'package:order_now/views/components/plus_button.dart';
+import 'package:order_now/views/pages/favourite.dart';
 import 'package:order_now/views/pages/food_menu_page.dart';
 import 'package:order_now/views/pages/food_page.dart';
 import 'package:order_now/views/pages/setup.dart';
