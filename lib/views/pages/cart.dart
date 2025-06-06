@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/material.dart' as badges;
 import 'package:order_now/views/components/custom_botton.dart';
+import 'package:order_now/views/pages/checkout.dart';
 
 class Cart extends StatefulWidget {
   const Cart({super.key});
@@ -460,7 +461,21 @@ class _CartState extends State<Cart> {
                 ],
               ),
               SizedBox(height: 16),
-              CustomBotton(text: "Proceed to Checkout"),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder:
+                          (context) => CheckoutPage(
+                            cartItems: cartItems,
+                            totalAmount: totalAmount,
+                          ),
+                    ),
+                  );
+                },
+                child: Text("proceed to checkout"),
+              ),
             ],
           ),
         ),
